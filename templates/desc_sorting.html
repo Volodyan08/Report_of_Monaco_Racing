@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Reverse sort
+{% endblock %}
+
+{% block body %}
+    <h1>Reverse sort</h1>
+    {% for racer in desc_racers %}
+        <li>{{ racer }}</li>
+    {% endfor %}
+{% endblock %}

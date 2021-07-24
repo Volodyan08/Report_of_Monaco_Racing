@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Sorted list of racers
+{% endblock %}
+
+{% block body %}
+    <h1>Sorted list of racers</h1>
+    {% for racer in asc_racers %}
+        <li>{{ racer }}</li>
+    {% endfor %}
+{% endblock %}
